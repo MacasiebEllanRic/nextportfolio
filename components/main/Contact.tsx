@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import useWindowSize from "@rehooks/window-size";
+// import useWindowSize from "@rehooks/window-size";
 
 const variants = {
   initial: {
@@ -22,10 +22,10 @@ const variants = {
 
 const Contact = () => {
   const formRef = useRef();
-  const { innerWidth: width } = useWindowSize();
+  // const { innerWidth: width } = useWindowSize();
 
-  const isSmallScreen = width < 450; 
-  const isBigScreen = width > 2400
+  // const isSmallScreen = width < 450; 
+  // const isBigScreen = width > 2400
 
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -69,7 +69,7 @@ const Contact = () => {
     >
       <div className="text-center h-screen flex flex-col cs:flex-row relative top-[120px] cs:top-[200px] 3xl:top-[200px]">
         <motion.div className="flex-1 flex flex-col text-white  gap-[4px] h-fit 3xl:h-full 3xl:gap-[20px]  "
-        style={{ marginTop: isSmallScreen ? '1rem' : '0' }} >
+         >
           <motion.h1 className="text-[50px] leading-[88px] text-[#2A0E61] 3xl:text-[130px] 3xl:mb-5">Contact Me</motion.h1>
           <motion.div className="3xl:gap-[10px]">
             <h2 className="3xl:text-[75px]">E-Mail</h2>
@@ -86,10 +86,10 @@ const Contact = () => {
         </motion.div>
 
         <motion.div className="flex-1 relative ">
-          <div className="svgContainer mysvg-container">
+          <div className="svgContainer mysvg-container hidden cs:block">
             <motion.div
-            initial={{ opacity: 1, scale: isSmallScreen ? 0.5 : isBigScreen ? 1.5 : 1}}
-            whileInView={{ opacity: 0, scale: isSmallScreen ? 0.5  : isBigScreen ? 1.5 : 1 }}
+            initial={{ opacity: 1, scale:1}}
+            whileInView={{ opacity: 0, scale: 1 }}
             transition={{ delay: 3, duration: 1 }}
               className="relative right-[35px] bottom-[100px] sm:right-[20px] cs:bottom-[70px] 3xl:left-[350px] 3xl:top-[200px]"
             >
