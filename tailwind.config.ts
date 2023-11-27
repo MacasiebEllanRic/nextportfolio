@@ -19,6 +19,7 @@ const config: Config = {
     screens: {
       'sm': '375px',    // 375px
       'md': '425px',    // 425px
+      'cs': '550px',
       'lg': '768px',    // 768px
       'xl': '1024px',   // 1024px
       '2xl': '1440px',  // 1440px

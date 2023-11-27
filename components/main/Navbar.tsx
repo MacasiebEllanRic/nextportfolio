@@ -18,29 +18,29 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
 
-          <span className="font-bold ml-[10px] hidden lg:block text-gray-300 ">
+          <span className="font-bold ml-[10px] hidden cs:block text-gray-300 ">
             Ellan Macasieb
           </span>
         </a>
 
         <div className=" mb-[10px] h-full flex items-center justify-center ">
-          <div className="lg:flex items-center justify-center h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me" className="mr-[20px] whitespace-nowrap text-xs cursor-pointer ">
+          <div className="xl:w-[700px] xl:gap-[100px] cs:flex items-center justify-center h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+            <a href="#about-me" className="xl:text-base mr-[20px] whitespace-nowrap text-xs cursor-pointer ">
               About me
             </a>
-            <a href="#skills" className="mr-[20px] text-xs cursor-pointer">
+            <a href="#skills" className="xl:text-base mr-[20px] text-xs cursor-pointer">
               Skills
             </a>
-            <a href="#projects" className="mr-[20px] text-xs cursor-pointer">
+            <a href="#projects" className="xl:text-base mr-[20px] text-xs cursor-pointer">
               Projects
             </a>
-            <a href="#contact" className="mr-[20px] text-xs cursor-pointer">
+            <a href="#contact" className="xl:text-base mr-[20px] text-xs cursor-pointer">
               Contact
             </a>
           </div>
         </div>
 
-        <div className="flex flex-row gap-5 sm:hidden lg:block lg:flex lg:flex-row lg:gap-5">
+        <div className="flex flex-row gap-5 sm:hidden cs:block cs:flex cs:flex-row cs:gap-5">
           {Socials.map((social) => (
             <Image
               src={social.src}

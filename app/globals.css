@@ -31,9 +31,13 @@
   display: flex;
 
   position: relative;
-  width: -moz-max-content;
-  width: max-content;
+
   transition: 0.45s cubic-bezier(0.6, 0.6, 0, 1) box-shadow;
+}
+
+.Welcome-box2{
+    width: -moz-max-content;
+  width: max-content;
 }
 
 .button-primary {
@@ -75,4 +79,31 @@ html {
 }
 .zdexplus{
   z-index:8;
+}
+.mysvg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Adjust the size of the SVG for screens smaller than 768px (adjust as needed) */
+@media (max-width: 767px) {
+  .mysvg {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+
+/* Set the default size for the SVG */
+.mysvg-container .mysvg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Adjust the size of the SVG for screens smaller than 768px (adjust as needed) */
+@media (max-width: 767px) {
+  .mysvg-container .mysvg {
+    width: 50%;
+    height: 50%;
+  }
 }
