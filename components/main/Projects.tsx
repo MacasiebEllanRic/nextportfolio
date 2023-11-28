@@ -14,24 +14,24 @@ const Projects = () => {
       </h1>
       <div  className="h-full w-full flex flex-col md:flex-row gap-10 px-10">
         <ProjectCard
-          src="/NextWebsite.png"
-          title="Modern Next.js Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          link="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1296369449916363451"
+          src="/GameHub.png"
+          title="GameHub with RawgIO"
+          description="My 1st React Project where I used the RawgIO API to fetch data on video games. I built using React, ChakraUI and Typescript. Will Continue to add more Functionality"
+          link="https://game-hub-gilt-phi.vercel.app/"
         />
         
         <ProjectCard
-          src="/CardImage.png"
-          title="Interactive Website Cards"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          link="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1296369449916363451"
+          src="/Ecommerce.png"
+          title="Online Store"
+          description="I built an Ecommerce Store using Next.js, React, and Typescript. It utilizes a Prisma database, uses Stripe to handle transaction, and Cloudinary to render images. (still under development)"
+          link="https://online-store-1-eight.vercel.app/"
        />
        
         <ProjectCard
           src="/SpaceWebsite.png"
-          title="Space Themed Website"
+          title="Space Themed Website Portfolio"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          link="https://www.figma.com/files/recents-and-sharing/recently-viewed?fuid=1296369449916363451"
+          link=""
        />
        
        
