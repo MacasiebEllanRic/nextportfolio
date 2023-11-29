@@ -61,7 +61,7 @@ const Contact = () => {
 
   return (
     <motion.div
-      className="sm:text-blue relative flex flex-col h-screen w-full overflow-x-hidden 3xl:w-[2560px] 3xl:h-[1168px] "
+      className="sm:text-blue relative flex flex-col h-screen w-full overflow-hidden 3xl:w-[2560px] 3xl:h-[1168px] "
       id="contact"
       variants={variants}
       initial="initial"
@@ -110,12 +110,12 @@ const Contact = () => {
           // @ts-ignore
             ref={formRef}
             onSubmit={sendEmail}
-            className="flex w-[75%] flex-nowrap absolute top-0 z-[50] flex-col gap-[20px] cs:px-0 left-10 3xl:gap-[30px] 3xl:h-[600px] 3xl:top-[200px]"
+            className="flex w-[75%] flex-nowrap absolute top-0 z-[50] flex-col gap-[20px] cs:px-0 left-10 3xl:gap-[30px] 3xl:h-[600px] 3xl:top-[200px] "
           >
-            <input type="text" className="bg-transparent border-[#2A0E61] border-2 3xl:text-[30px] " required placeholder="Name" name="name" />
-            <input type="email" className="bg-transparent border-[#2A0E61] border-2 3xl:text-[30px]" required placeholder="Email" name="email" />
-            <textarea rows={4} placeholder="Message" className="bg-transparent border-[#2A0E61] border-2 text-white 3xl:text-[30px]" name="message" />
-            <button className="bg-transparent w-full self-center cursor-pointer text-white justify-left border-[#2A0E61] border-2 3xl:text-[30px]" >
+            <input type="text" className="relative bottom-[80px] bg-transparent border-[#2A0E61] cs:bottom-0 border-2 3xl:text-[30px] " required placeholder="Name" name="name" />
+            <input type="email" className="relative bottom-[80px] bg-transparent border-[#2A0E61] cs:bottom-0 border-2 3xl:text-[30px]" required placeholder="Email" name="email" />
+            <textarea rows={4} placeholder="Message" className="relative bottom-[80px] cs:bottom-0 bg-transparent border-[#2A0E61] border-2 text-white 3xl:text-[30px]" name="message" />
+            <button className=" relative bottom-[80px] cs:bottom-0 bg-transparent w-full self-center cursor-pointer text-white justify-left border-[#2A0E61] border-2 3xl:text-[30px]" >
               Submit
             </button>
             {error && <div className="text-white">Error</div>}
