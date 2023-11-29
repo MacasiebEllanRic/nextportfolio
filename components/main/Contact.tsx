@@ -6,7 +6,7 @@ import emailjs from "@emailjs/browser";
 
 const variants = {
   initial: {
-    y: 900,
+    y: 100,
     opacity: 0,
   },
   animate: {
