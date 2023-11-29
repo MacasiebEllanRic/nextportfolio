@@ -30,7 +30,7 @@ const Projects = () => {
         <ProjectCard
           src="/SpaceWebsite.png"
           title="Space Themed Website Portfolio"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          description="My Portfolio that you are currently on. I created this portofolio using Nextjs, React, Tailwind, Framer-motion, and Threejs. "
           link=""
        />
        

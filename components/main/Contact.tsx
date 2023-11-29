@@ -90,7 +90,7 @@ const Contact = () => {
             <motion.div
             initial={{ opacity: 1, scale:1}}
             whileInView={{ opacity: 0, scale: 1 }}
-            transition={{ delay: 3, duration: 1 }}
+            transition={{ delay: 1.5, duration: 1 }}
               className="relative right-[35px] bottom-[100px] sm:right-[20px] cs:bottom-[70px] 3xl:left-[350px] 3xl:top-[200px]"
             >
               <svg width="450px" height="450px" viewBox="0 0 1920 1920" fill="#2A0E61">
@@ -106,7 +106,7 @@ const Contact = () => {
           <motion.form
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: 4, duration: 1 }}
+            transition={{ delay: 1.5, duration: 1 }}
           // @ts-ignore
             ref={formRef}
             onSubmit={sendEmail}
