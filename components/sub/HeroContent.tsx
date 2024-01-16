@@ -56,6 +56,7 @@ const HeroContent = () => {
           solutions.
         </motion.p>
         <motion.a
+          href="#projects"
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-xs text-white cursor-pointer rounded-lg max-w-[200px] 3xl:max-w-[600px] 3xl:w-[300px]"
         >

@@ -42,13 +42,17 @@ const Navbar = () => {
 
         <div className="flex flex-row gap-5 sm:hidden cs:block cs:flex cs:flex-row cs:gap-5">
           {Socials.map((social) => (
+            // eslint-disable-next-line react/jsx-key
+            <a href={social.link}>
             <Image
               src={social.src}
               alt={social.name}
               key={social.name}
+              
               width={24}
               height={24}
             />
+            </a>
           ))}
         </div>
       </div>
